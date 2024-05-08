@@ -1,0 +1,395 @@
+{
+    "adv-sycl": [
+        "(?:Total elapsed time = )([0-9.+-e]+)(?: s)",
+        [
+            "7",
+            "15",
+            "8000",
+            "50"
+        ]
+    ],
+    "axhelm-sycl": [
+        "(?:Total elapsed time = )([0-9.+-e]+)(?: s)",
+        [
+            "3",
+            "8000",
+            "100"
+        ]
+    ],
+    "burger-sycl": [
+        "(?:Total kernel execution time )([0-9.+-e]+)(?: \\(s\\))",
+        [
+            "8193",
+            "8193",
+            "100"
+        ]
+    ],
+    "d2q9-bgk-sycl": [
+        "(?:Total kernel execution time over: )([0-9.+-e]+)(?: \\(s\\))",
+        [
+            "Inputs/input_256x256.params",
+            "Obstacles/obstacles_256x256.dat"
+        ],
+        "main",
+        false,
+        ["tar", "-xvzf", "test.tar.gz"]
+    ],
+    "d3q19-bgk-sycl": [
+        "(?:Total execution time: )([0-9.+-e]+)(?: s)",
+        [
+            "128"
+        ]
+    ],
+    "heat2d-sycl": [
+        "(?:Execution time:  )([0-9.+-e]+)(?: s)",
+        [
+            "4096",
+            "8192",
+            "1000",
+            "data.txt"
+        ],
+        "main",
+        false,
+        ["python3", "mkinit.py", "4096", "8192", "data.txt"]
+    ],
+    "laplace-sycl": [
+        "(?:Total time for )(?:[0-9]+)(?: iterations: )([0-9.+-e]+)(?: s)"
+    ],
+    "laplace3d-sycl": [
+        "(?:Total kernel execution time: )([0-9.+-e]+)(?: \\(s\\))",
+        [
+            "512",
+            "512",
+            "512",
+            "100",
+            "0"
+        ]
+    ],
+    "lid-driven-cavity-sycl": [
+        "(?:Total execution time of the iteration loop: )([0-9.+-e]+)(?: \\(s\\))"
+    ],
+    "lulesh-sycl": [
+        "(?:Total execution time of the iteration loop: )([0-9.+-e]+)(?: \\(s\\))",
+        [
+            "-i",
+            "100",
+            "-s",
+            "128", 
+            "-r",
+            "11",
+            "-b",
+            "1",
+            "-c",
+            "1"
+        ],
+        "lulesh"
+    ],
+    "miniWeather-sycl": [
+        "(?:Total main time step loop: )([0-9.+-e]+)(?: sec)"
+    ],
+    "sph-sycl": [
+        "(?:Total execution time of sph kernels: )([0-9.+-e]+)(?: \\(s\\))"
+    ],
+    "wsm5-sycl": [
+        "(?:Total kernel execution time: )([0-9.+-e]+)(?: \\(s\\))",
+        [
+            "10"
+        ]
+    ],
+    "adv-cuda": [
+        "(?:Total elapsed time = )([0-9.+-e]+)(?: s)",
+        [
+            "7",
+            "15",
+            "8000",
+            "50"
+        ]
+    ],
+    "axhelm-cuda": [
+        "(?:Total elapsed time = )([0-9.+-e]+)(?: s)",
+        [
+            "3",
+            "8000",
+            "100"
+        ]
+    ],
+    "burger-cuda": [
+        "(?:Total kernel execution time )([0-9.+-e]+)(?: \\(s\\))",
+        [
+            "8193",
+            "8193",
+            "100"
+        ]
+    ],
+    "d2q9-bgk-cuda": [
+        "(?:Total kernel execution time over: )([0-9.+-e]+)(?: \\(s\\))",
+        [
+            "Inputs/input_256x256.params",
+            "Obstacles/obstacles_256x256.dat"
+        ],
+        "main",
+        false,
+        ["tar", "-xvzf", "test.tar.gz"]
+    ],
+    "d3q19-bgk-cuda": [
+        "(?:Total execution time: )([0-9.+-e]+)(?: s)",
+        [
+            "128"
+        ]
+    ],
+    "heat2d-cuda": [
+        "(?:Execution time:  )([0-9.+-e]+)(?: s)",
+        [
+            "4096",
+            "8192",
+            "1000",
+            "data.txt"
+        ],
+        "main",
+        false,
+        ["python3", "mkinit.py", "4096", "8192", "data.txt"]
+    ],
+    "laplace-cuda": [
+        "(?:Total time for )(?:[0-9]+)(?: iterations: )([0-9.+-e]+)(?: s)"
+    ],
+    "laplace3d-cuda": [
+        "(?:Total kernel execution time: )([0-9.+-e]+)(?: \\(s\\))",
+        [
+            "512",
+            "512",
+            "512",
+            "100",
+            "0"
+        ]
+    ],
+    "lid-driven-cavity-cuda": [
+        "(?:Total execution time of the iteration loop: )([0-9.+-e]+)(?: \\(s\\))"
+    ],
+    "lulesh-cuda": [
+        "(?:Total execution time of the iteration loop: )([0-9.+-e]+)(?: \\(s\\))",
+        [
+            "-i",
+            "100",
+            "-s",
+            "128", 
+            "-r",
+            "11",
+            "-b",
+            "1",
+            "-c",
+            "1"
+        ],
+        "lulesh"
+    ],
+    "miniWeather-cuda": [
+        "(?:Total main time step loop: )([0-9.+-e]+)(?: sec)"
+    ],
+    "sph-cuda": [
+        "(?:Total execution time of sph kernels: )([0-9.+-e]+)(?: \\(s\\))",
+        [],
+        "sph"
+    ],
+    "wsm5-cuda": [
+        "(?:Total kernel execution time: )([0-9.+-e]+)(?: \\(s\\))",
+        [
+            "10"
+        ]
+    ],
+    "adv-hip": [
+        "(?:Total elapsed time = )([0-9.+-e]+)(?: s)",
+        [
+            "7",
+            "15",
+            "8000",
+            "50"
+        ]
+    ],
+    "axhelm-hip": [
+        "(?:Total elapsed time = )([0-9.+-e]+)(?: s)",
+        [
+            "3",
+            "8000",
+            "100"
+        ]
+    ],
+    "burger-hip": [
+        "(?:Total kernel execution time )([0-9.+-e]+)(?: \\(s\\))",
+        [
+            "8193",
+            "8193",
+            "100"
+        ]
+    ],
+    "d2q9-bgk-hip": [
+        "(?:Total kernel execution time over: )([0-9.+-e]+)(?: \\(s\\))",
+        [
+            "Inputs/input_256x256.params",
+            "Obstacles/obstacles_256x256.dat"
+        ],
+        "main",
+        false,
+        ["tar", "-xvzf", "test.tar.gz"]
+    ],
+    "d3q19-bgk-hip": [
+        "(?:Total execution time: )([0-9.+-e]+)(?: s)",
+        [
+            "128"
+        ]
+    ],
+    "heat2d-hip": [
+        "(?:Execution time:  )([0-9.+-e]+)(?: s)",
+        [
+            "4096",
+            "8192",
+            "1000",
+            "data.txt"
+        ],
+        "main",
+        false,
+        ["python3", "mkinit.py", "4096", "8192", "data.txt"]
+    ],
+    "laplace-hip": [
+        "(?:Total time for )(?:[0-9]+)(?: iterations: )([0-9.+-e]+)(?: s)"
+    ],
+    "laplace3d-hip": [
+        "(?:Total kernel execution time: )([0-9.+-e]+)(?: \\(s\\))",
+        [
+            "512",
+            "512",
+            "512",
+            "100",
+            "0"
+        ]
+    ],
+    "lid-driven-cavity-hip": [
+        "(?:Total execution time of the iteration loop: )([0-9.+-e]+)(?: \\(s\\))"
+    ],
+    "lulesh-hip": [
+        "(?:Total execution time of the iteration loop: )([0-9.+-e]+)(?: \\(s\\))",
+        [
+            "-i",
+            "100",
+            "-s",
+            "128", 
+            "-r",
+            "11",
+            "-b",
+            "1",
+            "-c",
+            "1"
+        ],
+        "lulesh"
+    ],
+    "miniWeather-hip": [
+        "(?:Total main time step loop: )([0-9.+-e]+)(?: sec)"
+    ],
+    "sph-hip": [
+        "(?:Total execution time of sph kernels: )([0-9.+-e]+)(?: \\(s\\))",
+        [],
+        "sph"
+    ],
+    "wsm5-hip": [
+        "(?:Total kernel execution time: )([0-9.+-e]+)(?: \\(s\\))",
+        [
+            "10"
+        ]
+    ],
+    "adv-omp": [
+        "(?:Total elapsed time = )([0-9.+-e]+)(?: s)",
+        [
+            "7",
+            "15",
+            "8000",
+            "50"
+        ]
+    ],
+    "axhelm-omp": [
+        "(?:Total elapsed time = )([0-9.+-e]+)(?: s)",
+        [
+            "3",
+            "8000",
+            "100"
+        ]
+    ],
+    "burger-omp": [
+        "(?:Total kernel execution time )([0-9.+-e]+)(?: \\(s\\))",
+        [
+            "8193",
+            "8193",
+            "100"
+        ]
+    ],
+    "d2q9-bgk-omp": [
+        "(?:Total kernel execution time over: )([0-9.+-e]+)(?: \\(s\\))",
+        [
+            "Inputs/input_256x256.params",
+            "Obstacles/obstacles_256x256.dat"
+        ],
+        "main",
+        false,
+        ["tar", "-xvzf", "test.tar.gz"]
+    ],
+    "heat2d-omp": [
+        "(?:Execution time:  )([0-9.+-e]+)(?: s)",
+        [
+            "4096",
+            "8192",
+            "1000",
+            "data.txt"
+        ],
+        "main",
+        false,
+        ["python3", "mkinit.py", "4096", "8192", "data.txt"]
+    ],
+    "laplace-omp": [
+        "(?:Total time for )(?:[0-9]+)(?: iterations: )([0-9.+-e]+)(?: s)"
+    ],
+    "laplace3d-omp": [
+        "(?:Total kernel execution time: )([0-9.+-e]+)(?: \\(s\\))",
+        [
+            "512",
+            "512",
+            "512",
+            "100",
+            "0"
+        ]
+    ],
+    "lid-driven-cavity-omp": [
+        "(?:Total execution time of the iteration loop: )([0-9.+-e]+)(?: \\(s\\))"
+    ],
+    "lulesh-omp": [
+        "(?:Total execution time of the iteration loop: )([0-9.+-e]+)(?: \\(s\\))",
+        [
+            "-i",
+            "100",
+            "-s",
+            "128", 
+            "-r",
+            "11",
+            "-b",
+            "1",
+            "-c",
+            "1"
+        ],
+        "lulesh"
+    ],
+    "miniWeather-omp": [
+        "(?:Total main time step loop: )([0-9.+-e]+)(?: sec)",
+        [],
+        "main",
+        false,
+        "",
+        ["mpiexec", "-n", "1"]
+    ],
+    "sph-omp": [
+        "(?:Total execution time of sph kernels: )([0-9.+-e]+)(?: \\(s\\))",
+        [],
+        "sph"
+    ],
+    "wsm5-omp": [
+        "(?:Total kernel execution time: )([0-9.+-e]+)(?: \\(s\\))",
+        [
+            "10"
+        ]
+    ]
+}

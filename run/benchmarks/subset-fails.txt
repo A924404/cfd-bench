@@ -1,0 +1,8 @@
+axhelm-sycl
+axhelm-cuda
+axhelm-hip
+axhelm-omp
+lulesh-sycl
+lulesh-cuda
+lulesh-hip
+lulesh-omp
